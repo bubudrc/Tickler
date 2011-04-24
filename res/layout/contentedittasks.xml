@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<RelativeLayout
+		style="@style/TitleBar"
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:id="@+id/top_control_tasks"
+    	android:layout_height="60dip">
+        <LinearLayout 
+    		style="@style/RightTopControlTasks"
+    		android:id="@+id/getGraph">
+	        <ImageView 
+	        	style="@style/TitleBarSeparator"
+	        	android:layout_marginLeft="5dip"/>
+	        <ImageButton
+	            style="@style/RightImageTopControlTasks"/>
+    	</LinearLayout>
+    	<EditText 
+        	android:text="Name of the context"
+        	android:inputType="textUri"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_toLeftOf="@+id/getGraph"
+        	android:layout_centerVertical="true" 
+        	android:textSize="@dimen/text_size_medium" />
+	</RelativeLayout>
+	<LinearLayout 
+		android:id="@+id/bottom_control_tasks"
+		android:layout_width="fill_parent" 
+		android:layout_alignParentBottom="true"
+		android:background="@color/background4" 
+		android:layout_height="60dip">
+		<Button
+       		android:text="Done" 
+       		android:background="@color/buttonPressed"
+       		style="@style/ButtonLinearRelative" />
+   		<Button 
+        	android:layout_weight="1" 
+        	android:text="Revert" 
+        	android:background="@color/buttonNoPressed" 
+        	style="@style/ButtonLinearRelative"/>
+	</LinearLayout>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:text="here put: grouptasks and task"
+		android:layout_below="@+id/top_control_tasks" 
+		android:layout_above="@+id/bottom_control_tasks"/>
+</RelativeLayout>

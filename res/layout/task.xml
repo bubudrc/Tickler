@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		style="@style/RowTasks">
+	    <CheckBox
+	    	style="@style/CheckBoxTask"/>
+	    <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="0dip"
+	        android:layout_weight="1"
+	        android:layout_height="fill_parent">
+	        <TextView
+	            style="@style/TopTextTask"
+	            android:text="09:10 - 12:00"/>
+	       	<TextView
+	            style="@style/BottomTextTask"
+	            android:text="mon, tue, wed, thu, fri, sat, sun "/>
+	    </LinearLayout>
+	    <ImageView 
+    		style="@style/TitleBarSeparator"
+    		android:layout_marginLeft="5dip"/>
+		<ImageButton
+            style="@style/ButtonTasks"
+			android:background="@drawable/button_minus"/>
+	</LinearLayout>
+	<ImageView style="@style/TaskBottomSeparator"/>
+</LinearLayout>

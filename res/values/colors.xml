@@ -9,5 +9,16 @@
     <color name="background1">#ffffffff</color>
     <color name="background2">#ffd5ddeb</color>
     <color name="background3">#ffffcccc</color>
+    
+    <!-- BUBUDRC - ADDED  -->
+    <color name="background4">#858585</color>
+    <color name="background_edit_row">#f6ecec</color>
+    <color name="text_upedit">#000000</color>
+    <color name="text_bottomedit">#666666</color>
+    <color name="text_button">#444444</color>
+    <color name="title_separator">#ff66cc00</color>
+    <color name="buttonNoPressed">#B0B0B0</color>
+    <color name="buttonPressed">#E3E3E3</color>
+    <!-- BUBUDRC - END ADDED  -->
 
 </resources>
